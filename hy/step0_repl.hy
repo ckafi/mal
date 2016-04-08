@@ -1,6 +1,7 @@
 #!/usr/bin/env hy
 
-(import sys)
+(import hy)
+(import sys mal_readline)
 
 (defn READ [str]
  str)
@@ -15,6 +16,6 @@
   str)
 
 (while true
-  (-> (input "user> ")
+  (-> (mal_readline.readline)
       (rep)
       (print)))
